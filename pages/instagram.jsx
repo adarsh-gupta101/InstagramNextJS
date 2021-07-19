@@ -30,7 +30,6 @@ export default function Instagram() {
     export async function getInitialProps() {
       if (typeof window !== 'undefined') {
         console.log('we are running on the client')
-      const data= useSelector(selectCount);
       if (!data) {
   return {
     notFound: true,

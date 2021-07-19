@@ -4,13 +4,14 @@ import ExploreIcon from '@material-ui/icons/Explore';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import SearchIcon from '@material-ui/icons/Search';
 import Link from 'next/link'
+import Image from "next/Image"
 
 export default function Header({user}){
     return(
 
 <div className="Header">
 <Link href="/login">
-<img id="Header__image"src="https://1000logos.net/wp-content/uploads/2017/02/ig-logo.png"/></Link>
+<Image id="Header__image" width="300" height="50" src="https://1000logos.net/wp-content/uploads/2017/02/ig-logo.png"/></Link>
 
 <div className="header__searchbar">< SearchIcon />
 
@@ -24,8 +25,10 @@ export default function Header({user}){
 <ExploreIcon/>
 <FavoriteBorderIcon/>
 <Link href="/login">
-<img style={{borderRadius:"50%",width:"4vw"}} src={user.photo} onClick={()=>{localStorage.removeItem("user")}}></img>
+<Image className="userImage" style={{borderRadius:"50% !important"}}  width="25" height="25" objectFit="contain" src={user.photo} onClick={()=>{localStorage.removeItem("user")}}></Image>
+
 </Link>
+
 
 </div>
 

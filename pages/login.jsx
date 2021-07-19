@@ -70,12 +70,12 @@ export default function Login(){
       </Head>
 
     <div>
-    <img className="iphone__image"src="/phone.png" alt="phone" layout="responsive" width={600} height={800}/>
+    <Image className="iphone__image" src="/phone.png" alt="phone"  width="600" height="800"/> 
     </div>
     <div className="login__form">
     <div className="login__form1">
         <div className="login__formname" style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
-            <img id="logo" src="/instagramlogo.png" width="35%"/>
+            <Image id="logo" src="/instagramlogo.png"width="95" height="95" />
        Instagram
 </div>
 <div className="login__input">

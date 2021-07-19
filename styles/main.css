@@ -5,7 +5,13 @@
   justify-content:space-around;
 }
 #Header__image{
-  width:15%;
+  width:15px;
+  height:15px
+}
+.userImage{
+border-radius:50% !important;
+padding:2px!important;
+border:1px solid black !important;
 }
 #Header__search{
   outline-width:0;
