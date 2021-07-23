@@ -1,5 +1,5 @@
 .Header{
-  background-color:#f7f4f4;
+  background-color:#ffffff;
   display:flex;
   align-items: center;
   justify-content:space-around;
@@ -13,6 +13,13 @@ border-radius:50% !important;
 padding:2px!important;
 border:1px solid black !important;
 }
+.userImagestory{
+  border-radius:50% !important;
+  padding:2px!important;
+  border:1px solid blue !important;
+  overflow:hidden
+}
+
 #Header__search{
   outline-width:0;
   padding:1vw;
@@ -32,12 +39,47 @@ border:1px solid black !important;
 border: 0.1px solid  grey
 }
 @media only screen and (max-width:736px){
-  .header__searchbar,.Header__icons{
+  .header__searchbar{
     display:none;
   }
+  .rigth{
+    display:none;
+  }
+
   #Header__image{
 
     height:15vh;
     width:auto;
   }
 }
+.Instagram__sections{
+  display :flex;
+  justify-content:space-around;
+}
+.userImagesection{
+
+  border-radius:100% !important;
+  padding:2px!important;
+  border:1px solid black !important;
+
+}
+.left{background:;position:relative}
+.storycontainer{display:flex;background:white;width:100%;}
+#userpostp{
+  border-radius:50% !important;
+  object-fit: cover;
+}
+#useer{display:flex;
+align-items:center;
+}
+
+#pp{  object-fit: cover;
+}
+.uploadedpic{
+  width:25vw !important;
+  height:auto !important;
+}
+#userpostp1{
+  border-radius:50% !important;
+}
+.POST{background-color:blue}

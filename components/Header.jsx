@@ -11,7 +11,7 @@ export default function Header({user}){
 
 <div className="Header">
 <Link href="/login">
-<Image id="Header__image" width="300" height="50" src="https://1000logos.net/wp-content/uploads/2017/02/ig-logo.png"/></Link>
+<Image id="Header__image" width="200" height="50" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/></Link>
 
 <div className="header__searchbar">< SearchIcon />
 
