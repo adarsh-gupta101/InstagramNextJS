@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 export default function Home(){
 const state=useSelector(selectCount)
 const[user,setuser]=useState(state)
-console.log(user)
+//console.log(user)
 
   return (
     <div className="Index">

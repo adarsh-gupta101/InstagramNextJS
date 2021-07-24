@@ -11,7 +11,7 @@ import { useRouter } from 'next/router'
 
 
 
-import { auth, provider } from "../Components/firebase.js";
+import { auth, provider } from "../components/firebase.js";
 
 
 export default function Login(){
@@ -34,7 +34,7 @@ export default function Login(){
     auth
       .signInWithPopup(provider)
       .then((result) => {
-        console.log(result);
+      //  console.log(result);
         const newUser = {
           name: result.user.displayName,
           photo: result.user.photoURL,
@@ -70,7 +70,7 @@ export default function Login(){
       </Head>
 
     <div>
-    <Image className="iphone__image" src="/phone.png" alt="phone"  width="600" height="800"/> 
+    <Image className="iphone__image" src="/phone.png" alt="phone"  width="600" height="800"/>
     </div>
     <div className="login__form">
     <div className="login__form1">
